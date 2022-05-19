@@ -40,7 +40,7 @@ export default {
     stylePath: 'css/fonts.css',
     families: {
       'Lora': [400, 700],
-      'Source+Code+Pro': true,
+      'Source+Code+Pro': [400, 700]
     }
   },
 
@@ -51,8 +51,15 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+    '@nuxtjs/style-resources',
     '@nuxtjs/google-fonts'
   ],
+
+  styleResources: {
+    scss: [
+      './assets/css/variables.scss'
+    ]
+  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [

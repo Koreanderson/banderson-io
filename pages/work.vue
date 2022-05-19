@@ -36,8 +36,8 @@
 
 <script>
 export default {
-  name: 'Experience',
-  transitions: 'page',
+  name: 'Work',
+  transition: 'page',
   setup() {
   },
 }

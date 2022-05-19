@@ -1,5 +1,5 @@
 <template>
-  <div class="relative py-20 mx-auto mb-20 max-w-screen-lg before:-left-24 before:bg-primary before:block before:top-0 before:bottom-0 before:w-52 before:absolute">
+  <div class="relative py-20 mx-auto mb-20 max-w-screen-xl before:-left-24 before:bg-primary before:block before:top-0 before:bottom-0 before:w-52 before:absolute">
     <div class="relative max-w-xl">
       <h1>Brian Anderson</h1>
       <h2>Frontend Developer</h2>

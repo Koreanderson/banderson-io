@@ -2,8 +2,45 @@ body {
   font-family: 'Source Code Pro', monospace;
 }
 
+.h1,
 h1 {
   font-family: 'Lora', sans-serif;
   font-size: 48px;
   font-weight: 700;
+}
+
+.h2,
+h2 {
+  font-size: 32px;
+  font-family: 'Lora', sans-serif;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+.h3,
+h3 {
+  font-family: 'Source Code Pro', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.h6,
+h6 {
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.page-enter-active,
+.page-leave-active { 
+  transition: all .25s; 
+}
+.page-enter {
+  opacity: 0; 
+  transform: translate(0, -10px);
+}
+
+.page-leave-active { 
+  opacity: 0; 
 }

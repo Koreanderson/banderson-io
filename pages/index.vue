@@ -37,6 +37,7 @@ export default {
   h2 {
     font-size: 24px;
     letter-spacing: 1px;
+    margin-bottom: 40px;
   }
 
   p {

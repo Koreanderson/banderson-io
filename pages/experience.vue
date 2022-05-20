@@ -23,7 +23,6 @@ export default {
       .catch(err => {
         error({ statusCode: 404, message: "Page not found" });
       });
-      console.log(page)
     return {
       page
     };

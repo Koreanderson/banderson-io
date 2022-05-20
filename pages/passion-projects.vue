@@ -1,7 +1,7 @@
 <template>
   <div class="relative py-20 mx-auto mb-20 max-w-screen-xl before:-left-24 before:bg-primary before:block before:top-0 before:bottom-0 before:w-52 before:absolute">
     <div class="relative max-w-xl">
-      <h2>Passion Projects</h2>
+      <h1>Passion Projects</h1>
       <div class="my-10 md:max-w-lg">
         <h3>Figma UI Kit Generator</h3>
         <div>

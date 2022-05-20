@@ -2,19 +2,26 @@ body {
   font-family: 'Source Code Pro', monospace;
 }
 
-.h1,
-h1 {
+.display {
   font-family: 'Lora', sans-serif;
   font-size: 48px;
   font-weight: 700;
 }
 
-.h2,
-h2 {
+.h1,
+h1 {
   font-size: 32px;
   font-family: 'Lora', sans-serif;
   letter-spacing: 1px;
   font-weight: 700;
+}
+
+.h2,
+h2 {
+  font-family: 'Source Code Pro', sans-serif;
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
 }
 
 .h3,

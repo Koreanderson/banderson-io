@@ -49,10 +49,10 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
-    // https://go.nuxtjs.dev/tailwindcss
-    '@nuxtjs/tailwindcss',
+    '@nuxtjs/content',
+    '@nuxtjs/google-fonts',
     '@nuxtjs/style-resources',
-    '@nuxtjs/google-fonts'
+    '@nuxtjs/tailwindcss'
   ],
 
   styleResources: {

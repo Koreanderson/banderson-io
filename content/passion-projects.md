@@ -1,0 +1,12 @@
+---
+
+title: Passion Projects
+projects:
+  - title: Figma UI Kit Generator
+    description: Leveraging the Figma API and Node.js to generate UI Kit markup from a Figma template.
+  - title: Dice Roll Object Detection Model
+    description: Training a custom Tensorflow Object Detection model to recognize tabletop game dice roll values.
+
+---
+
+# Passion Projects

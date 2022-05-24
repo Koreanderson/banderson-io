@@ -18,10 +18,25 @@ h1 {
 
 .h2,
 h2 {
+  display: inline;
   font-family: 'Source Code Pro', sans-serif;
   font-size: 18px;
   letter-spacing: 1px;
   margin-bottom: 10px;
+  position: relative;
+
+  &:before {
+    background: $color--primary;
+    content: '';
+    display: block;
+    bottom: 0;
+    left: 0;
+    right: 10px;
+    height: 15px;
+    position: absolute;
+    width: 100%;
+    z-index: -100;
+  }
 }
 
 .h3,

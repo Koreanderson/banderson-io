@@ -1,6 +1,6 @@
 <template>
   <div class="flex justify-between max-w-screen-xl mx-auto py-20">
-    <div class="flex gap-10">
+    <div class="flex gap-10" v-if="!isMobile">
       <nuxt-link class="text-lg relative" to="/">About</nuxt-link>
       <nuxt-link class="text-lg relative" to="experience">Experience</nuxt-link>
       <nuxt-link class="text-lg relative" to="passion-projects">Passion Projects</nuxt-link>
@@ -19,10 +19,21 @@ export default {
   components: {
     BellIcon
   },
-  setup() {
-    const links = ['/', 'work-samples', 'passion-projects', 'experience'];
+  data() {
+    return {
+      links: ['/', 'work-samples', 'passion-projects', 'experience'],
+    }
+  } ,
+  computed: {
+    isMobile() {
+      return this.$mq === "sm" || this.$mq === "md";
+    }
   },
 }
+</script>
+
+
+
 </script>
 
 <style lang="scss" scoped>

@@ -64,7 +64,8 @@ export default {
   },
   styleResources: {
     scss: [
-      './assets/css/colors.scss'
+      './assets/css/colors.scss',
+      './assets/css/media-queries.scss'
     ]
   },
 

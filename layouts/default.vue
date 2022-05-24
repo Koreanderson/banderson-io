@@ -1,6 +1,6 @@
 <template>
   <div class="px-8">
-    <NavMenu v-if="!isMobile" />
+    <NavMenu />
     <Nuxt />
   </div>
 </template>

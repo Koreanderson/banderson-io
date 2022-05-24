@@ -1,11 +1,16 @@
 <template>
   <div>
-    <div class="relative py-20 mx-auto mb-20 max-w-screen-xl before:-left-24 before:bg-primary before:block before:top-0 before:bottom-0 before:w-52 before:absolute">
+    <div class="wrapper relative py-20 mx-auto mb-20 max-w-screen-xl ">
       <div class="relative max-w-xl">
         <nuxt-content :document="page"/>
-        <div v-if="isMobile">
-          <ExperienceContent :roles="this.experiencePage.roles"  />
-          <div class="">
+        <div class="mt-10" v-if="isMobile">
+          <div class="section--experience">
+            <h2>Experience</h2>
+            <ExperienceContent :roles="this.experiencePage.roles"  />
+          </div>
+          <div class="section--passion-projects">
+            <h2>Passion Projects</h2>
+            <PassionProjectsContent :projects="this.passionProjectsPage.projects"  />
           </div>
         </div>
       </div>
@@ -30,9 +35,15 @@ import ExperienceContent from '../components/ExperienceContent.vue';
             .catch(err => {
             error({ statusCode: 404, message: "Page not found" });
         });
+        const passionProjectsPage = await $content("passion-projects")
+            .fetch()
+            .catch(err => {
+            error({ statusCode: 404, message: "Page not found" });
+        });
         return {
             page,
             experiencePage,
+            passionProjectsPage,
         };
     },
     data: {
@@ -40,11 +51,10 @@ import ExperienceContent from '../components/ExperienceContent.vue';
     },
     methods: {},
     mounted() {
-        console.log("test");
     },
     computed: {
         isMobile() {
-            return this.$mq === "sm" || this.$mq === "md";
+          return this.$mq === "sm" || this.$mq === "md";
         }
     },
     components: { ExperienceContent }
@@ -52,19 +62,40 @@ import ExperienceContent from '../components/ExperienceContent.vue';
 </script>
 
 <style lang="scss" scoped>
+  .wrapper {
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      background-color: $color--primary;
+      left: -1.25rem;
+      top: 0;
+      width: 13rem;
+
+      @include md {
+        left: -1.25rem;
+        top: 0;
+        width: 13rem;
+      }
+    }
+  }
+
   h1 {
-    margin-bottom: 20px;
+    @include md {
+      margin-bottom: 20px;
+    }
   }
 
   h2 {
-    font-size: 24px;
+    font-size: 26px;
     letter-spacing: 1px;
-    margin-bottom: 40px;
+    margin-bottom: 24px;
   }
 
   p {
     font-size: 18px;
     line-height: 32px;
+    margin-bottom: 10px;
   }
 
 </style>

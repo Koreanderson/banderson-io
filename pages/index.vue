@@ -101,6 +101,7 @@ import ExperienceContent from '../components/ExperienceContent.vue';
   a { 
     display: inline-block;
     position: relative;
+    font-weight: 500;
 
     &:after {
       transition: .1s linear all;

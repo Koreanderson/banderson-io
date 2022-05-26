@@ -42,7 +42,7 @@ export default {
     stylePath: 'css/fonts.css',
     families: {
       'Lora': [400, 700],
-      'Source+Code+Pro': [400, 700]
+      'Source+Code+Pro': [400, 500, 700]
     }
   },
 

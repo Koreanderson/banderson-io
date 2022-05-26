@@ -1,0 +1,1 @@
+window.__NUXT__=(function(a){return {staticAssetsBase:"\u002Fbanderson-io\u002F_nuxt\u002Fstatic\u002F1653573854",layout:"default",error:a,serverRendered:true,routePath:"\u002Fpassion-projects",config:{_app:{basePath:"\u002Fbanderson-io\u002F",assetsPath:"\u002Fbanderson-io\u002F_nuxt\u002F",cdnURL:a}}}}(null));

@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-between max-w-screen-xl mx-auto py-20">
+  <div class="flex justify-between max-w-screen-xl mx-auto py-10 md:py-20">
     <div class="flex gap-10" v-if="!isMobile">
       <nuxt-link class="text-lg relative" to="/">About</nuxt-link>
       <nuxt-link class="text-lg relative" to="experience">Experience</nuxt-link>
@@ -32,10 +32,6 @@ export default {
 }
 </script>
 
-
-
-</script>
-
 <style lang="scss" scoped>
   a:hover,
   .nuxt-link-exact-active {
@@ -50,5 +46,4 @@ export default {
       z-index: -10;
     }
   }
-
 </style>

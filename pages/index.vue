@@ -1,16 +1,17 @@
 <template>
   <div>
-    <div class="wrapper relative py-20 mx-auto mb-20 max-w-screen-xl ">
+    <div class="wrapper relative md:py-20 py-5 mx-auto mb-20 max-w-screen-xl">
+      <squares class="absolute top-0 right-0" size="120px" />
       <div class="relative max-w-xl">
         <nuxt-content :document="page"/>
-        <div class="mt-10" v-if="isMobile">
-          <div class="section--experience">
-            <h2>Experience</h2>
-            <ExperienceContent :roles="this.experiencePage.roles"  />
+        <div v-if="isMobile">
+          <div class="section--experience mt-14">
+            <h2 class="highlight">Experience</h2>
+            <experience-content :roles="this.experiencePage.roles" />
           </div>
-          <div class="section--passion-projects">
-            <h2>Passion Projects</h2>
-            <PassionProjectsContent :projects="this.passionProjectsPage.projects"  />
+          <div class="section--passion-projects mt-14">
+            <h2 class="highlight">Passion Projects</h2>
+            <passion-projects-content :projects="this.passionProjectsPage.projects" />
           </div>
         </div>
       </div>
@@ -24,38 +25,38 @@ import ExperienceContent from '../components/ExperienceContent.vue';
     name: "IndexPage",
     transition: "page",
     async asyncData({ $content, params, error }) {
-        const slug = params.slug || "index";
-        const page = await $content(slug)
-            .fetch()
-            .catch(err => {
-            error({ statusCode: 404, message: "Page not found" });
-        });
-        const experiencePage = await $content("experience")
-            .fetch()
-            .catch(err => {
-            error({ statusCode: 404, message: "Page not found" });
-        });
-        const passionProjectsPage = await $content("passion-projects")
-            .fetch()
-            .catch(err => {
-            error({ statusCode: 404, message: "Page not found" });
-        });
-        return {
-            page,
-            experiencePage,
-            passionProjectsPage,
-        };
+      const slug = params.slug || "index";
+      const page = await $content(slug)
+        .fetch()
+        .catch(err => {
+        error({ statusCode: 404, message: "Page not found" });
+      });
+
+      const experiencePage = await $content("experience")
+        .fetch()
+        .catch(err => {
+        error({ statusCode: 404, message: "Page not found" });
+      });
+
+      const passionProjectsPage = await $content("passion-projects")
+        .fetch()
+        .catch(err => {
+        error({ statusCode: 404, message: "Page not found" });
+      });
+
+      return {
+        page,
+        experiencePage,
+        passionProjectsPage,
+      };
     },
     data: {
-        pageData: {},
-    },
-    methods: {},
-    mounted() {
+      pageData: {},
     },
     computed: {
-        isMobile() {
-          return this.$mq === "sm" || this.$mq === "md";
-        }
+      isMobile() {
+        return this.$mq === "sm" || this.$mq === "md";
+      }
     },
     components: { ExperienceContent }
 }
@@ -64,18 +65,23 @@ import ExperienceContent from '../components/ExperienceContent.vue';
 <style lang="scss" scoped>
   .wrapper {
     &:before {
-      content: '';
-      display: block;
-      position: absolute;
       background-color: $color--primary;
-      left: -1.25rem;
+      content: '';
+      display: none;
+      position: absolute;
       top: 0;
-      width: 13rem;
+      bottom: 0;
+      left: -1.25rem;
+      height: 7.75rem;
+      width: 11rem;
 
       @include md {
-        left: -1.25rem;
+        display: block;
         top: 0;
+        bottom: 0;
+        left: -1.25rem;
         width: 13rem;
+        height: auto;
       }
     }
   }
@@ -92,10 +98,25 @@ import ExperienceContent from '../components/ExperienceContent.vue';
     margin-bottom: 24px;
   }
 
-  p {
-    font-size: 18px;
-    line-height: 32px;
-    margin-bottom: 10px;
+  a { 
+    display: inline-block;
+    position: relative;
+
+    &:after {
+      transition: .1s linear all;
+      content: '';
+      display: block;
+      background-color: $color--primary;
+      width: 100%;
+      height: 6px;
+      bottom: 7px;
+      z-index: -10;
+      position: absolute;
+    }
+
+    &:hover:after {
+      height: 20px;
+    }
   }
 
 </style>

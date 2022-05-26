@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="my-10 md:max-w-lg" v-for="project in projects" :key="project">
+    <div class="mb-10 md:mt-10 md:max-w-lg" v-for="project in projects" :key="project">
       <h3>{{ project.title }}</h3>
       <div>{{ project.description }}</div>
     </div>
@@ -16,6 +16,3 @@ export default {
   setup() {},
 }
 </script>
-
-<style lang="scss" scoped>
-</style>

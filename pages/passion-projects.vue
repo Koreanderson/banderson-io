@@ -8,24 +8,21 @@
 </template>
 
 <script>
-import PassionProjectsContent from '../components/PassionProjectsContent.vue';
-export default {
+  import PassionProjectsContent from '../components/PassionProjectsContent.vue';
+  export default {
     name: "PassionProjects",
     transitions: "page",
     async asyncData({ $content, params, error }) {
-        const page = await $content("passion-projects")
-            .fetch()
-            .catch(err => {
-            error({ statusCode: 404, message: "Page not found" });
-        });
-        return {
-            page
-        };
+      const page = await $content("passion-projects")
+        .fetch()
+        .catch(err => {
+        error({ statusCode: 404, message: "Page not found" });
+      });
+      return {
+        page
+      };
     },
     setup() { },
     components: { PassionProjectsContent }
-}
+  }
 </script>
-
-<style lang="scss" scoped>
-</style>

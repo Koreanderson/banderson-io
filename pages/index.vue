@@ -65,7 +65,7 @@ import ExperienceContent from '../components/ExperienceContent.vue';
 <style lang="scss" scoped>
   .wrapper {
     &:before {
-      background-color: $color--primary;
+      background-color: $color-green-300;
       content: '';
       display: none;
       position: absolute;
@@ -74,6 +74,7 @@ import ExperienceContent from '../components/ExperienceContent.vue';
       left: -1.25rem;
       height: 7.75rem;
       width: 11rem;
+      z-index: -20;
 
       @include md {
         display: block;
@@ -104,10 +105,10 @@ import ExperienceContent from '../components/ExperienceContent.vue';
     font-weight: 500;
 
     &:after {
+      background-color: $color-green-500;
       transition: .1s linear all;
       content: '';
       display: block;
-      background-color: $color--primary;
       width: 100%;
       height: 6px;
       bottom: 7px;

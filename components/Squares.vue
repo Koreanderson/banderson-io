@@ -27,15 +27,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  $color--primary: #BEEED2;
-  $color--secondary: #E9FFF2;
 
   .squares {
     position: absolute;
   }
 
   .top {
-    background-color: $color--primary;
+    background-color: $color-green-500;
     position: absolute;
     top: 0;
     left: 0;
@@ -44,7 +42,7 @@ export default {
   }
 
   .middle {
-    background-color: transparentize($color--primary, 0.5);
+    background-color: transparentize($color-green-500, 0.5);
     position: absolute;
     right: 0;
     width: 46%;
@@ -54,7 +52,7 @@ export default {
   }
 
   .bottom {
-    background-color: $color--secondary;
+    background-color: $color-green-300;
     position: absolute;
     bottom: 0;
     left: 25%;

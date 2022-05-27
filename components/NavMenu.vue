@@ -33,17 +33,29 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  a:hover,
-  .nuxt-link-exact-active {
+
+  a {
     &:after {
+      background-color: $color-green-500;
+      bottom: 5px;
       content: '';
       display: block;
-      background-color: $color--primary;
-      height: 12px;
-      position: absolute;
-      top: 10px;
+      height: 0;
       width: 100%;
+      position: absolute;
+      transition: .1s linear all;
       z-index: -10;
     }
+
+    &:hover:after {
+      height: 26px;
+    }
+  }
+
+  .nuxt-link-exact-active:after {
+    bottom: 5px;
+    content: '';
+    display: block;
+    height: 3px;
   }
 </style>

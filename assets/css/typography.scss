@@ -52,7 +52,7 @@ p {
   position: relative;
 
   &:before {
-    background: $color--primary;
+    background-color: $color-green-300;
     content: '';
     display: block;
     bottom: 0;

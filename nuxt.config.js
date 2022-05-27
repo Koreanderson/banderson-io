@@ -30,7 +30,8 @@ export default {
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
     '@/assets/css/typography.scss',
-    '@/assets/css/transitions.scss'
+    '@/assets/css/transitions.scss',
+    '@/assets/css/animations.scss'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins

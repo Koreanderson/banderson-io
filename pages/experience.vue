@@ -1,5 +1,6 @@
 <template>
-  <div class="relative py-20 mx-auto mb-20 max-w-screen-xl before:-left-24 before:bg-primary before:block before:top-0 before:bottom-0 before:w-52 before:absolute">
+  <div class="wrapper relative md:py-20 py-5 mx-auto mb-20 max-w-screen-xl">
+    <squares class="absolute top-0 right-0" size="120px" />
     <div class="relative max-w-xl">
       <nuxt-content :document="page"/>
       <ExperienceContent :roles="page.roles" />
@@ -24,3 +25,33 @@ export default {
   setup() {},
 }
 </script>
+
+<style lang="scss" scoped>
+  .wrapper {
+    &:before {
+      background-color: $color-green-300;
+      content: '';
+      display: none;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: -1.25rem;
+      height: 7.75rem;
+      width: 11rem;
+      z-index: -20;
+      animation: fade-up;
+      animation-duration: 1s;
+      animation-fill-mode: forwards;
+      opacity: 0;
+
+      @include md {
+        display: block;
+        top: 0;
+        bottom: 0;
+        left: -1.25rem;
+        width: 13rem;
+        height: auto;
+      }
+    }
+  }
+</style>

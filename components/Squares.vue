@@ -28,8 +28,10 @@ export default {
 
 <style lang="scss" scoped>
 
+
   .squares {
     position: absolute;
+    transition-delay: 0.5s;
   }
 
   .top {
@@ -39,6 +41,11 @@ export default {
     left: 0;
     width: 25%;
     height: 25%;
+    animation: fade-up;
+    animation-delay: 1.25s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
   }
 
   .middle {
@@ -49,6 +56,11 @@ export default {
     height: 46%;
     top: 15%;
     z-index: 0;
+    animation: fade-up;
+    animation-duration: 1s;
+    animation-delay: 0.8s;
+    animation-fill-mode: forwards;
+    opacity: 0;
   }
 
   .bottom {
@@ -59,5 +71,10 @@ export default {
     width: 60%;
     height: 60%;
     z-index: -10;
+    animation: fade-up;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
   }
 </style>

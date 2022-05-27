@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="wrapper relative md:py-20 py-5 mx-auto mb-20 max-w-screen-xl">
-      <squares class="absolute top-0 right-0" size="120px" />
+      <squares class="absolute top-0 right-0 delay" size="120px" />
       <div class="relative max-w-xl">
         <nuxt-content :document="page"/>
         <div v-if="isMobile">
@@ -50,9 +50,6 @@ import ExperienceContent from '../components/ExperienceContent.vue';
         passionProjectsPage,
       };
     },
-    data: {
-      pageData: {},
-    },
     computed: {
       isMobile() {
         return this.$mq === "sm" || this.$mq === "md";
@@ -75,6 +72,10 @@ import ExperienceContent from '../components/ExperienceContent.vue';
       height: 7.75rem;
       width: 11rem;
       z-index: -20;
+      animation: fade-up;
+      animation-duration: 1s;
+      animation-fill-mode: forwards;
+      opacity: 0;
 
       @include md {
         display: block;

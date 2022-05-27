@@ -22,6 +22,11 @@ export default {
       page
     };
   },
+  head() {
+    return {
+      title: 'Experience'
+    }
+  },
   setup() {},
 }
 </script>

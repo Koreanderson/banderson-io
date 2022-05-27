@@ -23,6 +23,11 @@
         page
       };
     },
+    head() {
+      return {
+        title: 'Passion Projects'
+      }
+    },
     components: { PassionProjectsContent }
   }
 </script>

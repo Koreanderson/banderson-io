@@ -50,6 +50,11 @@ import ExperienceContent from '../components/ExperienceContent.vue';
         passionProjectsPage,
       };
     },
+    head() {
+      return {
+        title: 'Brian Anderson - Front End Engineer'
+      }
+    },
     computed: {
       isMobile() {
         return this.$mq === "sm" || this.$mq === "md";

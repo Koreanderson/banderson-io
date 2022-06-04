@@ -1,9 +1,10 @@
 <template>
   <div class="flex justify-between max-w-screen-xl mx-auto py-10 md:py-20">
     <div class="flex gap-10" v-if="!isMobile">
-      <nuxt-link class="text-lg relative" to="/">About</nuxt-link>
+      <nuxt-link class="text-lg relative" to="/"></></nuxt-link>
       <nuxt-link class="text-lg relative" to="experience">Experience</nuxt-link>
       <nuxt-link class="text-lg relative" to="passion-projects">Passion Projects</nuxt-link>
+      <nuxt-link class="text-lg relative" to="about">About</nuxt-link>
     </div>
     <div class="flex justify-end items-center">
       <BellIcon class="icon mr-4" />
@@ -13,23 +14,23 @@
 </template>
 
 <script>
-import BellIcon from "~/assets/icon--bell.svg?inline";
+  import BellIcon from "~/assets/icon--bell.svg?inline";
 
-export default {
-  components: {
-    BellIcon
-  },
-  data() {
-    return {
-      links: ['/', 'work-samples', 'passion-projects', 'experience'],
-    }
-  } ,
-  computed: {
-    isMobile() {
-      return this.$mq === "sm" || this.$mq === "md";
-    }
-  },
-}
+  export default {
+    components: {
+      BellIcon
+    },
+    data() {
+      return {
+        links: ['/', 'work-samples', 'passion-projects', 'experience'],
+      }
+    } ,
+    computed: {
+      isMobile() {
+        return this.$mq === "sm" || this.$mq === "md";
+      }
+    },
+  }
 </script>
 
 <style lang="scss" scoped>

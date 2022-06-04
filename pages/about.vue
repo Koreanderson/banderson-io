@@ -13,7 +13,7 @@
             <li><strong>Spirit Animal:</strong> 🦊</li>
             <li><strong>Pokemon:</strong> <img class="w-5 inline-flex relative bottom-1" src="~assets/gengar.png" /> Gengar</li>
             <li><strong>VS Code Theme:</strong> Noctis Minimus</li>
-            <li><strong>Keyboard:</strong> Think 6.5 w/ 67g Zealios</li>
+            <li><strong>Keyboard:</strong> 💡 Think 6.5 w/ 67g Zealios</li>
             <li><strong>D&D Campaign:</strong> 🧛 Curse of Strahd</li>
             <li><strong>D&D Character Class:</strong> 🗡️ Arcane Trickster Rogue</li>
           </ul>

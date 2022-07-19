@@ -1,10 +1,10 @@
 <template>
   <div class="flex justify-between max-w-screen-xl mx-auto py-10 md:py-20">
     <div class="flex gap-10" v-if="!isMobile">
-      <nuxt-link class="text-lg relative" to="/"></></nuxt-link>
-      <nuxt-link class="text-lg relative" to="experience">Experience</nuxt-link>
-      <nuxt-link class="text-lg relative" to="passion-projects">Passion Projects</nuxt-link>
-      <nuxt-link class="text-lg relative" to="about">About</nuxt-link>
+      <NuxtLink class="text-lg relative" to="/">Hello!</NuxtLink>
+      <NuxtLink class="text-lg relative" to="experience">Experience</NuxtLink>
+      <NuxtLink class="text-lg relative" to="passion-projects">Passion Projects</NuxtLink>
+      <NuxtLink class="text-lg relative" to="about">About</NuxtLink>
     </div>
     <div class="flex justify-end items-center">
       <BellIcon class="icon mr-4" />
@@ -34,7 +34,6 @@
 </script>
 
 <style lang="scss" scoped>
-
   a {
     &:after {
       background-color: $color-green-500;

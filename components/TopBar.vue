@@ -1,14 +1,11 @@
 <template>
-<div class="flex justify-end">
-  <div>Philadelphia, PA</div>
-</div>
-  
+  <div class="flex justify-end">
+    <div>Philadelphia, PA</div>
+  </div>
 </template>
 
 <script>
-export default {
-  setup() {
-    
-  },
-}
+  export default {
+    setup() {},
+  }
 </script>

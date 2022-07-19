@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="mb-10 md:mt-10 md:max-w-lg" v-for="project in projects" :key="project">
+    <div class="mb-10 md:mt-10 md:max-w-lg" v-for="project in projects" :key="project.title">
       <h3>{{ project.title }}</h3>
       <div class="mb-3">{{ project.description }}</div>
       <a :href="project.link" v-if="project.link" target="_blank">View Project</a>
@@ -9,14 +9,15 @@
 </template>
 
 <script>
-export default {
-  name: 'PassionProjectsContent',
-  props: {
-    'projects': Array,
-  },
-  setup() {},
-}
+  export default {
+    name: 'PassionProjects',
+    props: {
+      'projects': Array,
+    },
+    setup() {},
+  }
 </script>
+
 <style lang="scss">
   a {
     display: inline-block;
@@ -39,5 +40,4 @@ export default {
       height: 20px;
     }
   }
-
 </style>

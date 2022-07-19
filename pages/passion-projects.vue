@@ -1,15 +1,15 @@
 <template>
   <div class="wrapper relative md:py-20 py-5 mx-auto mb-20 max-w-screen-xl">
-    <squares class="absolute top-0 right-0" size="120px" />
+    <Squares class="absolute top-0 right-0" size="120px" />
     <div class="relative max-w-xl">
       <h1>{{ page.title }}</h1>
+      <NuxtContent :document="page"/>
       <PassionProjectsContent :projects="page.projects" />
     </div>
   </div>
 </template>
 
 <script>
-  import PassionProjectsContent from '../components/PassionProjectsContent.vue';
   export default {
     name: "PassionProjects",
     transitions: "page",
@@ -27,8 +27,7 @@
       return {
         title: 'Passion Projects'
       }
-    },
-    components: { PassionProjectsContent }
+    }
   }
 </script>
 
@@ -60,5 +59,4 @@
       }
     }
   }
-
 </style>

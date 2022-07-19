@@ -4,7 +4,7 @@ title: About Me
 
 ---
 
-# Hello!
+# A little about myself...
 
 I'm a developer that started my career as a designer. You can occasionally catch me trying to shake off the rust by opening up Figma and pushing things around the screen.
 

@@ -1,14 +1,15 @@
 <template>
   <div class="wrapper relative md:py-20 py-5 mx-auto mb-20 max-w-screen-xl">
-    <squares class="absolute top-0 right-0" size="120px" />
+    <Squares class="absolute top-0 right-0" size="120px" />
     <div class="relative max-w-xl">
-      <nuxt-content :document="page"/>
+      <NuxtContent :document="page"/>
       <ExperienceContent :roles="page.roles" />
     </div>
   </div>
 </template>
 
 <script>
+
 export default {
   name: 'Experience',
   transitions: 'page',

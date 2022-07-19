@@ -7,28 +7,26 @@
 </template>
 
 <script>
-export default {
-  name: 'Squares',
-  props: {
-    'size': {
-      'type': String,
-      'default': '64px'
+  export default {
+    name: 'Squares',
+    props: {
+      'size': {
+        'type': String,
+        'default': '64px'
+      },
     },
-  },
-  computed: {
-    squaresStyles() {
-      return {
-        width: this.size,
-        height: this.size
+    computed: {
+      squaresStyles() {
+        return {
+          width: this.size,
+          height: this.size
+        }
       }
     }
   }
-}
 </script>
 
 <style lang="scss" scoped>
-
-
   .squares {
     position: absolute;
     transition-delay: 0.5s;

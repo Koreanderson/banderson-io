@@ -1,17 +1,17 @@
 <template>
   <div>
     <div class="wrapper relative md:py-20 py-5 mx-auto mb-20 max-w-screen-xl">
-      <squares class="absolute top-0 right-0 delay" size="120px" />
+      <Squares class="absolute top-0 right-0 delay" size="120px" />
       <div class="relative max-w-xl">
-        <nuxt-content :document="page"/>
+        <NuxtContent :document="page"/>
         <div v-if="isMobile">
           <div class="section--experience mt-14">
             <h2 class="highlight">Experience</h2>
-            <experience-content :roles="this.experiencePage.roles" />
+            <ExperienceContent :roles="this.experiencePage.roles" />
           </div>
           <div class="section--passion-projects mt-14">
             <h2 class="highlight">Passion Projects</h2>
-            <passion-projects-content :projects="this.passionProjectsPage.projects" />
+            <PassionProjectsContent :projects="this.passionProjectsPage.projects" />
           </div>
         </div>
       </div>
@@ -20,7 +20,6 @@
 </template>
 
 <script>
-import ExperienceContent from '../components/ExperienceContent.vue';
   export default {
     name: "IndexPage",
     transition: "page",
@@ -59,9 +58,8 @@ import ExperienceContent from '../components/ExperienceContent.vue';
       isMobile() {
         return this.$mq === "sm" || this.$mq === "md";
       }
-    },
-    components: { ExperienceContent }
-}
+    }
+  }
 </script>
 
 <style lang="scss" scoped>
@@ -126,5 +124,4 @@ import ExperienceContent from '../components/ExperienceContent.vue';
       height: 20px;
     }
   }
-
 </style>

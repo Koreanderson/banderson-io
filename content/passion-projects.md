@@ -10,4 +10,4 @@ projects:
 
 ---
 
-# Passion Projects
+When I get the occasional bit of free time, I'll try to code something that aligns with my interests. These are a few of the things I'm currently working on now.

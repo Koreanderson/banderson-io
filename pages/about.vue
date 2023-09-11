@@ -9,13 +9,13 @@
         <div>
           <h2 class="mt-4 mb-4">My Current...</h2>
           <ul>
-            <li><strong>Hobbies:</strong> Cooking, Traveling</li>
+            <li><strong>Hobbies:</strong> Cooking, Traveling, Eating</li>
             <li><strong>Spirit Animal:</strong> 🦊</li>
             <li><strong>Pokemon:</strong> <img class="w-5 inline-flex relative bottom-1" src="~assets/gengar.png" /> Gengar</li>
             <li><strong>VS Code Theme:</strong> Noctis Minimus</li>
-            <li><strong>Keyboard:</strong> 💡 Think 6.5 w/ 67g Zealios</li>
-            <li><strong>D&D Campaign:</strong> 🧛 Curse of Strahd</li>
-            <li><strong>D&D Character Class:</strong> 🗡️ Arcane Trickster Rogue</li>
+            <li><strong>Keyboard:</strong> 🔭 Zoom 65 w/ Oil Kings</li>
+            <li><strong>D&D Campaign:</strong> 🧙 Dungeon of the Mad Mage</li>
+            <li><strong>D&D Character Class:</strong> 🪨 Stone Sorcerer</li>
           </ul>
         </div>
         <div v-if="isMobile">
@@ -120,7 +120,7 @@
     margin-bottom: 10px;
   }
 
-  a { 
+  a {
     display: inline-block;
     position: relative;
     font-weight: 500;

@@ -2,15 +2,23 @@
 
 title: Brian Anderson
 roles:
-  - company: The Stable
+  - company: Shopify
     title: Lead UI Engineer
-    duration: 2022 – Present
+    duration: 2023 – Present
+    description: 'Provide technical solutions, manage developer resources, optimize internal development practices and contribute to feature development' 
+  - company: Accenture Song
+    title: Solutions Architect
+    duration: 2022 – 2023
+    description: 'Provide technical solutions, manage developer resources, optimize internal development practices and contribute to feature development' 
+  - company: The Stable (Acquired by Accenture Song)
+    title: Lead UI Engineer
+    duration: 2022
     description: 'Provide technical solutions, manage developer resources, optimize internal development practices and contribute to feature development' 
   - company: BVA (Acquired by The Stable)
     title: Senior Front-End Developer
     duration: 2021 – 2022
     description: "Manage scope, build timelines and act as primary developer to bespoke Vue.js & Shopify e-commerce builds "
-  - company: Noticed.
+  - company: Noticed
     title: Senior Front-End Developer
     duration: 2018 – 2021
     description: "Act as primary developer to provide technical solutions for bespoke e-commerce builds and client retainers."

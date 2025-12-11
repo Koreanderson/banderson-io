@@ -5,11 +5,11 @@ roles:
   - company: Shopify
     title: Senior Solutions Architect
     duration: 2023 – Present
-    description: 'Provide technical solutions, manage developer resources, optimize internal development practices and contribute to feature development' 
+    description: "Design and implement complex, scalable commerce solutions for enterprise merchants by leveraging deep technical expertise in Shopify platform capabilities, third-party integrations, and industry best practices to translate business requirements into maintainable architecture that drive merchant success and growth."
   - company: Accenture Song
     title: Solutions Architect
     duration: 2022 – 2023
-    description: 'Provide technical solutions, manage developer resources, optimize internal development practices and contribute to feature development' 
+    description: 'Design and implement enterprise technology solutions that drive digital transformation and align technology strategy with client business objectives across multiple industries on the Shopify platform.' 
   - company: The Stable (Acquired by Accenture Song)
     title: Lead UI Engineer
     duration: 2022

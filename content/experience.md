@@ -3,7 +3,7 @@
 title: Brian Anderson
 roles:
   - company: Shopify
-    title: Lead UI Engineer
+    title: Senior Solutions Architect
     duration: 2023 – Present
     description: 'Provide technical solutions, manage developer resources, optimize internal development practices and contribute to feature development' 
   - company: Accenture Song
